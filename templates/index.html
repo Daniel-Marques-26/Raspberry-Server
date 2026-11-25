@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    body {
+        background-color: rgb(190, 232, 245);
+    }
+    
+    .title {
+        background-color: aqua;
+        width: 100vw;
+        margin: 0;
+        font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        justify-self: center;
+        justify-content: center;
+        display: flex;
+        font-weight: bold;
+    }
+
+    .block_content {
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(255, 228, 196);
+        box-shadow: 3px, 3px, 10px, black;
+        width: fit-content;
+        height: 100%;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .color_dif {
+        background-color: rgb(72, 219, 67);
+    }
+
+    .content_line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .subtitle {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Place</title>
+</head>
+<body>
+    <div class="title">
+        Welcome to my server!
+    </div>
+    <div class="content_line">
+        <div class="block_content">
+            <div class="subtitle">Visitas</div>
+            <div class="text">{{visitas}}</div>
+        </div>
+        <div class="block_content">
+            <div class="subtitle">Fun fact sobre mim:</div>
+            <div class="text">{{curiosidade}}</div>
+        </div>
+    </div>
+    <div class="content_line">
+        <div class="block_content color_dif">
+            <div class="subtitle">Ligar LED?</div>
+            <a href="/led/on" class="text">Clica aqui!</a>
+        </div>
+        <div class="block_content color_dif">
+            <div class="subtitle">Desligar LED?</div>
+            <a href="/led/off" class="text">Clica aqui!</a>
+        </div>
+        <div class="block_content color_dif">
+            <div class="subtitle">Estado do LED</div>
+            <div class="text">{{led_status}}</div>
+        </div>
+    </div>
+</body>
+</html>
